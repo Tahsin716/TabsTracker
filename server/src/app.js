@@ -9,10 +9,10 @@ app.use(bodyParser.json())
 app.use(cors())
 
 // Registration End-Point
-//app.post('/register', (req, res) => {
-//  res.send({
-//    message: `Hello ${req.body.email}! Your user was registered have fun!`
-//  })
-//})
-//
-//app.listen(process.env.PORT || 8081)
+app.post('/register', (req, res) => {
+  res.send({
+    message: `Hello ${req.body.email}! Your user was registered have fun!`
+  })
+})
+
+app.listen(process.env.PORT || 8081)
