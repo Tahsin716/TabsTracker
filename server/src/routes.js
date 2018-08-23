@@ -11,4 +11,7 @@ module.exports = (app) => {
   app.post('/register',
     AuthenticationControllerPolicy.register,
     AuthenticationController.register)
+  // Server end-point for login method
+  app.post('/login',
+    AuthenticationController.login)
 }
